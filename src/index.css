@@ -1,0 +1,107 @@
+:root {
+  --font-primary: #FFFFFF;
+  --font-secondary: #121212;
+  --bg-primary: #F7F7F7;
+  --bg-secondary: #4443C4;
+  --bg-card: #FFFFFF;
+  --bg-alt: #4443C440;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--font-primary);
+}
+
+/* Styles for <Deck/> component */
+.deck__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+
+.deck__button {
+  width: 100%;
+  height: 64px;
+  background-color: var(--bg-secondary);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--font-primary);
+}
+
+/* Styles for <FlashCard/> component */
+.card__container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 32px;
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  color: var(--font-secondary);
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Styles for <DeckProgress/> component */
+.progress__bar {
+  width: 100%;
+  height: 32px;
+  background-color: var(--bg-alt);
+  border-radius: 32px;
+  overflow: clip;
+}
+
+.progress__bar__inside {
+  height: 100%;
+  background-color: var(--bg-secondary);
+  border-radius: 32px;
+}
+
+.progress__text {
+  margin: 8px 0 0 16px;
+  color: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Styles for <Form/> component */
+input {
+  all: unset;
+  width: 100%;
+  height: 48px;
+  background-color: lightgray;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+input::placeholder {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+
+}
