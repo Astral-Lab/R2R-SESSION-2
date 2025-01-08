@@ -15,12 +15,7 @@ export default function Deck({}) {
             <div className="">
 
             </div>
-            <input  
-                type="text"
-                onChange={null}
-                placeholder="Answer"
-                value={""}
-            />
+            
             <FlashCard/>
             <DeckProgressBar progress={10} max={30}/>
             {/* put into own component? */}

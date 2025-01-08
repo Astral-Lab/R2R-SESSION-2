@@ -4,7 +4,8 @@
   --bg-primary: #F7F7F7;
   --bg-secondary: #4443C4;
   --bg-card: #FFFFFF;
-  --bg-alt: #4443C440;
+  --bg-alt: #4443C420;
+  --bg-primary-alt: #E0E0E0;
 }
 
 * {
@@ -13,7 +14,7 @@
   padding: 0;
 }
 
-body {
+#root {
   width: 100%;
   height: 100vh;
   background-color: var(--bg-primary);
@@ -87,19 +88,104 @@ body {
 }
 
 /* Styles for <Form/> component */
+h2 {
+  color: var(--font-secondary);
+  text-align: center;
+  font-size: 28px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background-color: white;
+}
+
 input {
   all: unset;
   width: 100%;
-  height: 48px;
-  background-color: lightgray;
+  height: 56px;
+  background-color: var(--bg-primary-alt);
   border-radius: 8px;
   box-sizing: border-box;
   padding: 16px;
+  color: var(--font-secondary);
+  margin-top: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-input::placeholder {
+label {
+  font-size: 24px;
+  color: var(--font-secondary);
   font-weight: 600;
+}
+
+li {
+  all: unset;
+}
+
+.form__button {
+  width: 100%;
+  height: 64px;
+  background-color: var(--bg-secondary);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
   font-size: 18px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--font-primary);
+  margin-top: 32px;
+  flex-shrink: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form__button__disabled {
+  opacity: 80%;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+}
+
+.cards__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__mini {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #E0E0E0;
+  border-radius: 8px;
+  color: var(--font-secondary);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card__mini > div p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card__mini > button {
+  all: unset;
+  display: flex;
+  align-items: center;
+}
+
+.card__mini > button:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
