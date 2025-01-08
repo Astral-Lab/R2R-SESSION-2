@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TiDelete } from "react-icons/ti";
 
-// react wisdom can be window rendering and clsx library?
+// empty deck
 
 export default function Form({ deck, setDeck }) {
     const [question, setQuestion] = useState("");
@@ -43,7 +43,7 @@ export default function Form({ deck, setDeck }) {
     ));
 
     return (
-        <div className="form__container">
+        <div>
             <form>
                 <div>
                     <label id="question">Question</label>
