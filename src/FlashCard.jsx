@@ -1,8 +1,27 @@
-export default function FlashCard({ question, answer, flipped }) {
+import { useState } from "react";
+
+export default function FlashCard({ question, answer }) {
+    const [count, setCount] = useState(0);
+
+    const classes = `
+        card__container
+        ${count === 0 ? "" : count % 2 === 0 ? "flip__forward" : "flip_backward"}
+    `
+
+    const handleClick = () => {
+        setCount(count + 1);
+    }
+
+    // swap to input element! to avoid needing to use useRef/useEffect
+    
     return (
-        <div className="card__container">
-            {/* <p className="">{question}</p> */}
-            <p className="card__text">What is the powerhouse of the cell?</p>
-        </div>
+        <button className={classes} onClick={handleClick}>
+            <div className="card__front">
+                <p className="card__text">{question}</p>
+            </div>
+            <div className="card__back">
+                <p className="card__text">{answer}</p>
+            </div>
+        </button>
     )
 }
