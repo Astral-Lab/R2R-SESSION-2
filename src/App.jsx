@@ -3,7 +3,7 @@ import Header from './Header'
 import Deck from './Deck';
 import Form from './Form';
 
-// Code done and github for session 1/2 (today)
+// Code done for session 2 (today)
 // Button component?
 // sandboxes created and slides finished (tomorrow)
 function App() {
