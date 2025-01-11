@@ -1,8 +1,11 @@
-export default function Header({}) {
+export default function Header({ showDeck, setShowDeck }) {
     return (
         <header className="">
-            {/* <h1 className="">React Flash</h1> */}
-            {/* button */}
+            <h1>React Flash</h1>
+            <button
+                className="header__toggle"
+                onClick={() => setShowDeck(!showDeck)}
+            >create</button>
         </header>
     )
 }

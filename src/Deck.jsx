@@ -17,14 +17,14 @@ export default function Deck({ deck }) {
 
     return (
         <div className="deck__container">
-            <div className="deck__background"></div>
             <FlashCard 
-                key={deck[cardIndex - 1].question}
                 question={deck[cardIndex - 1].question} 
                 answer={deck[cardIndex - 1].answer} 
             />
             <DeckProgressBar progress={cardIndex} max={deck.length}/>
-            <button className="deck__button" onClick={handleClick}>next card</button>
+            <button className="deck__button" onClick={handleClick}>
+                {cardIndex === deck.length ? "restart" : "next card"}
+            </button>
         </div>
     )
 }
