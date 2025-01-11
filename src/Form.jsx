@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { TiDelete } from "react-icons/ti";
 
-// empty deck
-
 export default function Form({ deck, setDeck }) {
     const [question, setQuestion] = useState("");
     const [answer, setAnswer] = useState("");

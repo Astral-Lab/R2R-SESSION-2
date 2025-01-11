@@ -53,12 +53,19 @@ h1 {
   font-weight: 600;
 }
 
+div {
+  width: 100%;
+}
+
 /* Styles for <Deck/> component */
 .deck__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 32px;
   padding: 32px;
+  flex-grow: 1;
 }
 
 .deck__button {
@@ -73,6 +80,28 @@ h1 {
   font-family: inherit;
   color: var(--font-primary);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.deck__empty {
+  color: var(--font-secondary);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: blue;
+}
+
+.card__container:has(input:checked) {
+  transform: rotateY(180deg);
 }
 
 /* Styles for <FlashCard/> component */
@@ -92,6 +121,7 @@ h1 {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
   transform-style: preserve-3d;
   border: none;
+  transition: transform 0.8s;
 }
 
 .card__container:hover {
@@ -211,6 +241,8 @@ li {
 .cards__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
   padding: 32px;
 }

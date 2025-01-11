@@ -3,19 +3,11 @@ import Header from './Header'
 import Deck from './Deck';
 import Form from './Form';
 
-// create button component
-
+// Code done and github for session 1/2 (today)
+// Button component?
+// sandboxes created and slides finished (tomorrow)
 function App() {
-  const [deck, setDeck] = useState([
-    {
-      question: "What is the best language?",
-      answer: "CSS!"
-    },
-    {
-      question: "What is the the powerhouse of the cell?",
-      answer: "Mitochondira?"
-    }
-  ]);
+  const [deck, setDeck] = useState([]);
   const [showDeck, setShowDeck] = useState(true);
 
   return (
