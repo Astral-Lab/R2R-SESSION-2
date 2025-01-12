@@ -13,9 +13,13 @@ Before you begin, ensure you have the following installed on your system:
 If you haven't installed Node.js yet, you can download it from [here](https://nodejs.org/)
 .
 
-### 🚀 Getting Started
+## View the Project in StackBlitz (Online)
 
-To get started with the React course, follow these steps:
+You can quickly start editing the project by clicking [here](https://stackblitz.com/~/github.com/Astral-Lab/R2R-SESSION-2/tree/template?file=src/App.jsx).
+
+### 🚀 Getting Started (Locally)
+
+To get started with the React course locally, follow these steps:
 
 1. **Clone the repository**:
    
