@@ -3,9 +3,6 @@ import Header from './Header'
 import Deck from './Deck';
 import Form from './Form';
 
-// Code done for session 2 (today)
-// Button component?
-// sandboxes created and slides finished (tomorrow)
 function App() {
   const [deck, setDeck] = useState([]);
   const [showDeck, setShowDeck] = useState(true);

@@ -1,11 +1,12 @@
+import { IoMdAdd } from "react-icons/io";
+
 export default function Header({ showDeck, setShowDeck }) {
     return (
-        <header className="">
+        <header>
             <h1>React Flash</h1>
-            <button
-                className="header__toggle"
-                onClick={() => setShowDeck(!showDeck)}
-            >create</button>
+            <button onClick={() => setShowDeck(!showDeck)}>
+                <IoMdAdd size={"32px"} color={"#FFFFFF"}/>
+            </button>
         </header>
     )
 }

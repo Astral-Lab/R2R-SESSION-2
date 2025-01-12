@@ -20,6 +20,10 @@ export default function Deck({ deck }) {
             {deck.length ? (
                 <>
                     <FlashCard 
+                        // The key prop ensures the answer is not shown
+                        // when navigating between cards that are flipped
+                        // as it forces a re-render of the card component
+                        key={deck[cardIndex - 1].question}
                         question={deck[cardIndex - 1].question} 
                         answer={deck[cardIndex - 1].answer} 
                     />

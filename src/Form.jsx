@@ -41,7 +41,7 @@ export default function Form({ deck, setDeck }) {
     ));
 
     return (
-        <div>
+        <div className="form__container">
             <form>
                 <div>
                     <label id="question">Question</label>
