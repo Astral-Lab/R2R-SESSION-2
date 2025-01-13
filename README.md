@@ -13,7 +13,7 @@ Before you begin, ensure you have the following installed on your system:
 If you haven't installed Node.js yet, you can download it from [here](https://nodejs.org/)
 .
 
-## View the Project in StackBlitz (Online)
+### View the Project in StackBlitz (Online)
 
 You can quickly start editing the project by clicking [here](https://stackblitz.com/~/github.com/Astral-Lab/R2R-SESSION-2/tree/template?file=src/App.jsx).
 
